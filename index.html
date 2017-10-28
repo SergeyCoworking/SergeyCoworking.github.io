@@ -3,14 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Sure-Power-Homepage</title>
-    <style>
-        ul{                                                                                                             /* Маркер в виде изображения.Другой вид комента здесь некорректен почему-то*/
-            list-style-image: url("img/Circle.png");                                                                    /* Путь к изображению маркера.Другой вид комента здесь некорректен почему-то*/
-        }
-    </style>
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">                                        <!--Подключени иконок Font Awesome.1способ.Дольше грузит страницу-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">          <!--Подключени иконок Font Awesome.2способ.Быстрее грузит страницу.Не удалось
-</head>                                                                                                                 пока с ним разобраться-->
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">                                           <!--Подключени иконок Font Awesome.1способ.Дольше грузит страницу-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">          <!--Подключени иконок Font Awesome.2способ.Быстрее грузит страницу.Не удалось пока с ним разобраться-->
+    <link  href="style.css" rel="stylesheet">                                                                            <!--Подкл-е файла стилей-->
+</head>
 <body>
 <header>
     <div>                                                                                                               <!--Выбор региона-->
@@ -42,8 +38,8 @@
     </div>
 
     <div>
-    <ul>
-        <li><img src="">Certified Subtitle1</li>
+    <ul class="second">
+        <li>Certified Subtitle1</li>
         <li>EnerSys Supplier Subtitle2</li>
         <li>Emergensy Service Subtitle3</li>
     </ul>
