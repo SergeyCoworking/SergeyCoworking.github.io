@@ -3,62 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <title>Sure-Power-Homepage</title>
-    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">                                           <!--Подключени иконок Font Awesome.1способ.Дольше грузит страницу-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">          <!--Подключени иконок Font Awesome.2способ.Быстрее грузит страницу.Не удалось пока с ним разобраться-->
-    <link  href="style.css" rel="stylesheet">                                                                            <!--Подкл-е файла стилей-->
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">                                           <!--Подключени иконок Font Awesome.2способ.Быстрее грузит страницу-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">          <!--Подключени иконок Font Awesome.1способ.Дольше грузит страницу-->
+    <link  href="style.css" rel="stylesheet">                                                                           <!--Подкл-е файла стилей-->
+    <link href="https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet">                     <!--Подкл-е шрифтов гугл-->
 </head>
 <body>
 <header>
-    <div>                                                                                                               <!--Выбор региона-->
-        <select name="city" size="1">
-            <option selected>Philadelphia</option>
-            <option>Washington</option>
-            <option>Baltimore</option>
-        </select>
+    <div class="contacts-information">
+        <div class="city">                                                                                              <!--Выбор региона-->
+            <select name="city" size="1">
+                <option selected>Philadelphia</option>
+                <option>Washington</option>
+                <option>Baltimore</option>
+            </select>
+        </div>
+        <div class="tel">
+            <span><a class="tel" href="tel:+800-455-0054"><i class="fa fa-phone" aria-hidden="true"></i>Toll-free:800-455-0054</a></span>                                  <!--Контактный телефон-->
+        </div>
+        <div class="adress">
+            <span><i class="fa fa-location-arrow" aria-hidden="true"></i>200 Industrial Highway Ridley Park, PA 19078</span>                          <!--Адресс-->
+        </div>
+
+        <div class="social-network">
+            <ul>
+                <li><a class="social-network" href="mailto:ivan@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i>&nbsp;</a></li>
+                <li><a class="social-network" href="https://www.youtube.com/"><i class="fa fa-youtube" aria-hidden="true"></i>&nbsp;</a></li>
+                <li><a class="social-network" href="https://plus.google.com/"><i class="fa fa-google-plus" aria-hidden="true"></i>&nbsp;</a></li>
+                <li><a class="social-network" href="https://www.linkedin.com/"><i class="fa fa-linkedin" aria-hidden="true"></i>&nbsp;</a></li>
+                <li><a class="social-network" href="https://twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i>&nbsp;</a></li>
+            </ul>
+        </div>
     </div>
 
-    <span><a href="tel:+800-455-0054">&#9742;Toll-free:800-455-0054</a></span>                                          <!--Контактный телефон-->
 
-    <span><img src="img\arrow.png">200 Industrial Highway Ridley Park, PA 19078</span>                                  <!--Адресс-->
-
-    <div class="social-network">
-        <ul>
-            <li>
-                <a class="social-network" href="mailto:ivan@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i>&nbsp;</a>
-                <a class="social-network" href="https://www.youtube.com/"><i class="fa fa-youtube" aria-hidden="true"></i>&nbsp;</a>
-                <a class="social-network" href="https://plus.google.com/"><i class="fa fa-google-plus" aria-hidden="true"></i>&nbsp;</a>
-                <a class="social-network" href="https://www.linkedin.com/"><i class="fa fa-linkedin" aria-hidden="true"></i>&nbsp;</a>
-                <a class="social-network" href="https://twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i>&nbsp;</a>
-            </li>
-        </ul>
+    <div class="logo-block">
+        <div class="logo">                                                                                                       <!--Логотип страницы-->
+            <img src="img\logo.png">
+        </div>
+        <div class="info-block">
+            <ul class="info">
+                <li>
+                    <span>Certified</span>
+                    <span>Subtitle1</span>
+                </li>
+                <li>
+                    <span>EnerSys Supplier</span>
+                    <span>Subtitle2</span>
+                </li>
+                <li>
+                    <span>Emergensy Service</span>
+                    <span>Subtitle3</span>
+                </li>
+            </ul>
+        </div>
     </div>
 
-    <div id=logo>                                                                                                       <!--Логотип страницы-->
-    <img src="img\logo.png">
+
+    <div class="navigation-search">
+        <div class="navigation">
+            <nav>
+                <ul>
+                    <li><a class="nav" href="page/HOME.html">HOME</a></li>
+                    <li><a class="nav" href="page/ABOUT.html">ABOUT</a></li>
+                    <li><a class="nav" href="page/PRODUCTS.html">PRODUCTS</a></li>
+                    <li><a class="nav" href="page/SERVICES.html">SERVICES</a></li>
+                    <li><a class="nav" href="page/RENTALS.html">RENTALS</a></li>
+                    <li><a class="nav" href="page/LEARNING.html">LEARNING</a></li>
+                    <li><a class="nav" href="page/CONTACT.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="search">
+            <i class="fa fa-search" aria-hidden="true"></i>
+        </div>
+
     </div>
-
-    <div>
-    <ul class="second">
-        <li>Certified Subtitle1</li>
-        <li>EnerSys Supplier Subtitle2</li>
-        <li>Emergensy Service Subtitle3</li>
-    </ul>
-    </div>
-
-<nav>                                                                                                                   <!--Навигация по сайту-->
-    <ul>
-        <li>
-            <a href="page/HOME.html">HOME</a>
-            <a href="page/ABOUT.html">ABOUT</a>
-            <a href="page/PRODUCTS.html">PRODUCTS</a>
-            <a href="page/SERVICES.html">SERVICES</a>
-            <a href="page/RENTALS.html">RENTALS</a>
-            <a href="page/LEARNING.html">LEARNING</a>
-            <a href="page/CONTACT.html">CONTACT</a>
-        </li>
-    </ul>
-</nav>
-
 </header>
 </body>
 </html>
