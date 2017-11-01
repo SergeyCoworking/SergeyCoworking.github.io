@@ -10,31 +10,29 @@ a{    text-decoration: none;}
 a:hover{    color: #bd2631;    -webkit-transition: all .3s;    -moz-transition: all .3s;    -ms-transition: all .3s;
     -o-transition: all .3s;    transition: all .3s;}
 
-body{    font: 14px/1.5 'Hind', sans-serif;}
+body{    font: 16px/1.5 'Hind', sans-serif;}
 
 .clearfix:after,.clearfix:before{    display: table;    content: '';}
 
 .clearfix:after{    clear: both;}
 
-.contacts-information{    color: #212121;    background: #ededed;    padding: 15px 80px;}
+.contacts-information{    color: #212121;    background: #ededed;    padding: 25px 80px;}
 
-.city{    float: left;}
+.city{    float: left; margin: -17px}
 
-.tel{    float: left; margin-left: 10px}
+.tel{    float: left; margin: -5px 15px 65px 60px}
 
-.address{    float: left; margin-left: 10px}
+.adress{    float: left;display: block; margin-left: 20px;margin: -11px}
 
-.address-block{    float: left;}
+.adress-block{    float: left;}
 
-.social-network{    float: right;}
+.social-network{    float: right;margin:-15px 0px}
 
 a.social-network{    color: black;}
 
 .social-network ul li{display: inline-block; margin-left: 10px}
 
 a:hover{    color: #bd2631;}
-
-.logo-block{    padding: 15px 80px;}
 
 .navigation-search{    padding: 15px 85px;    background: #000000;}
 
@@ -48,12 +46,14 @@ a.tel{    color: black;}
 
 .navigation nav ul li{display: inline-block; margin-right: 15px}
 
-.logo{float: left}
+.logo-block{   width: 1400x; padding: 25px 80px }
+
+.logo{float: left;margin:0px 0px 0px -320px}
 
 .info-block{float: right}
 
-ul.info li{margin-left: 23px}
 
-.navigation-search{clear: both;}
 
-.search{display: inline-block;}
+.navigation-search{clear: both}
+
+.search{margin:-19px 0px}
