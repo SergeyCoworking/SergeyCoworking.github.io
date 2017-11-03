@@ -3,81 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <title>Sure-Power-Homepage</title>
-    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">                                           <!--Подключени иконок Font Awesome.2способ.Быстрее грузит страницу-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">          <!--Подключени иконок Font Awesome.1способ.Дольше грузит страницу-->
-    <link  href="style.css" rel="stylesheet">                                                                           <!--Подкл-е файла стилей-->
-    <link href="https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet">                     <!--Подкл-е шрифтов гугл-->
+    <!--Подключени иконок Font Awesome.2способ.Быстрее грузит страницу-->
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <!--Подключени иконок Font Awesome.1способ.Дольше грузит страницу-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Подкл-е файла стилей-->
+    <link href="style.css" rel="stylesheet">
+    <!--Подкл-е шрифтов гугл-->
+    <link href="https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet">
 </head>
 <body>
 <header>
-    <div class="contacts-information">
-        <div>
-            <div class="city">                                                                                              <!--Выбор региона-->
+    <div class="contacts-information clearfix">
+        <div class="adress-block">
+            <div class="city">
+                <!--Выбор региона-->
                 <select name="city" size="1">
                     <option selected>Philadelphia</option>
                     <option>Washington</option>
                     <option>Baltimore</option>
                 </select>
             </div>
+            <!--Контактный телефон-->
             <div class="tel">
-                <span><a class="tel" href="tel:+800-455-0054"><i class="fa fa-phone fa-lg" aria-hidden="true"></i>Toll-free:800-455-0054</a></span>                                  <!--Контактный телефон-->
+                <span><a class="tel" href="tel:+800-455-0054"><i class="fa fa-phone fa-lg" aria-hidden="true"></i>Toll-free:800-455-0054</a></span>
             </div>
+            <!--Адресс-->
             <div class="adress">
-                <span><i class="fa fa-location-arrow fa-lg" aria-hidden="true"></i>200 Industrial Highway Ridley Park, PA 19078</span>                          <!--Адресс-->
+                <span><i class="fa fa-location-arrow fa-lg" aria-hidden="true"></i>200 Industrial Highway Ridley Park, PA 19078</span>
             </div>
         </div>
-
         <div class="social-network">
             <ul>
-                <li><a class="social-network" href="mailto:ivan@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;</a></li>
-                <li><a class="social-network" href="https://www.youtube.com/"><i class="fa fa-youtube" aria-hidden="true"></i>&nbsp;</a></li>
-                <li><a class="social-network" href="https://plus.google.com/"><i class="fa fa-google-plus" aria-hidden="true"></i>&nbsp;</a></li>
-                <li><a class="social-network" href="https://www.linkedin.com/"><i class="fa fa-linkedin" aria-hidden="true"></i>&nbsp;</a></li>
-                <li><a class="social-network" href="https://twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i>&nbsp;</a></li>
+                <li><a href="mailto:ivan@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.youtube.com/"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+                <li><a href="https://plus.google.com/"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.linkedin.com/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                <li><a href="https://twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
             </ul>
         </div>
     </div>
 
 
-    <div class="logo-block">
-        <div class="logo">                                                                                                       <!--Логотип страницы-->
+    <div class="logo-block clearfix">
+        <!--Логотип страницы-->
+        <div class="logo">
             <img src="img\logo.png">
         </div>
-        <div class="info-block">
-            <ul class="info">
+        <div class="info">
+            <ul>
                 <li>
+                    <h4>
+                        <span>Certified</span>
+                    </h4>
                     <p>
-                        <span class="title">Certified</span>
-                        <span class="subtitle">Subtitle1</span>
+                        <span>Subtitle1</span>
                     </p>
                 </li>
                 <li>
+                    <h4>
+                        <span>EnerSys Supplier</span>
+                    </h4>
                     <p>
-                        <span class="title">EnerSys Supplier</span>
-                        <span class="subtitle">Subtitle2</span>
+                        <span>Subtitle2</span>
                     </p>
                 </li>
                 <li>
+                    <h4>
+                        <span>Emergensy Service</span>
+                    </h4>
                     <p>
-                        <span class="title">Emergensy Service</span>
-                    </p><span class="subtitle">Subtitle3</span>
+                        <span>Subtitle3</span>
+                    </p>
                 </li>
             </ul>
         </div>
     </div>
 
 
-    <div class="navigation-search">
+    <div class="navigation-search clearfix">
         <div class="navigation">
             <nav>
                 <ul>
-                    <li><a class="nav" href="page/HOME.html">HOME</a></li>
-                    <li><a class="nav" href="page/ABOUT.html">ABOUT</a></li>
-                    <li><a class="nav" href="page/PRODUCTS.html">PRODUCTS</a></li>
-                    <li><a class="nav" href="page/SERVICES.html">SERVICES</a></li>
-                    <li><a class="nav" href="page/RENTALS.html">RENTALS</a></li>
-                    <li><a class="nav" href="page/LEARNING.html">LEARNING</a></li>
-                    <li><a class="nav" href="page/CONTACT.html">CONTACT</a></li>
+                    <li><a href="page/HOME.html">HOME</a></li>
+                    <li><a href="page/ABOUT.html">ABOUT</a></li>
+                    <li><a href="page/PRODUCTS.html">PRODUCTS</a></li>
+                    <li><a href="page/SERVICES.html">SERVICES</a></li>
+                    <li><a href="page/RENTALS.html">RENTALS</a></li>
+                    <li><a href="page/LEARNING.html">LEARNING</a></li>
+                    <li><a href="page/CONTACT.html">CONTACT</a></li>
                 </ul>
             </nav>
         </div>
@@ -85,8 +99,26 @@
         <div class="search">
             <i class="fa fa-search" aria-hidden="true"></i>
         </div>
-
     </div>
 </header>
+<main>
+    <div class="slider">
+        <div class="slider-item">
+            <div class="slider-content">
+                <h2>
+
+                </h2>
+                <h1>
+
+                </h1>
+                <p>
+
+                </p>
+            </div>
+        </div>
+
+    </div>
+    </div>
+</main>
 </body>
 </html>
