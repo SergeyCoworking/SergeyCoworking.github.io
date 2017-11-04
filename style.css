@@ -60,7 +60,7 @@ a:hover {
 /*____________________________________________________________________*/
 .logo-block {
     width: 1400x;
-    padding: 25px 80px
+    padding: 25px 80px;
 }
 
 .logo {
@@ -69,12 +69,21 @@ a:hover {
 
 /*____________________________________________________________________*/
 .info li {
+    display: inline-block;
     list-style: none;
     line-height: 130%;
     padding-left: 25px;
     background: url(img/Circle.png) no-repeat left 44%;
-    margin-left: 35px;
+    margin-left: 15px;
     float: right;
+    border-right: 1px solid #e6e6e6;
+    padding-right: 30px;
+}
+
+.info ul li:last-of-type {
+    border-right: none;
+    padding-right: 0;
+    margin-right: 0;
 }
 
 li:before {
@@ -83,27 +92,64 @@ li:before {
 }
 
 /*____________________________________________________________________*/
-.navigation-search {
-    padding: 15px 85px;
-    background: #000000;
+.nav {
+    padding: 0px 85px;
+    background: rgba(0, 0, 0, 0.7);
 }
 
-.navigation nav ul li {
-    display: inline-block;
-    border-bottom: 7px solid transparent;
+.nav nav {
+    float: left
 }
 
 nav li a {
     color: #ffffff;
-    margin-right: 29px
+    padding: 24px 14px 16px;
+    display: inline-block;
+    position: relative;
+    bottom: 10px;
+    border-bottom: 7px solid transparent;
+}
+
+nav li a:before {
+    content: '';
+    position: absolute;
+    height: 7px;
+    width: 0;
+    bottom: 0;
+    background: #bd2631;
+    left: 0;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+
+nav li a:hover:before {
+    width: 100%;
+}
+
+.current a {
+    border-bottom: 7px solid #bd2631;
+
+}
+
+.nav ul li {
+    display: inline-block;
+    position: relative;
+    top: 15px;
 }
 
 .search {
     float: right;
-    color: #ffffff;
-    cursor: pointer
+    color: #fff;
+    font-size: 19px;
+    cursor: pointer;
+    position: relative;
+    top: 20px;
 }
 
+/*____________________________________________________________________*/
 .slider-item {
     background: url("" center right no-repiet);
     height: 600px;
