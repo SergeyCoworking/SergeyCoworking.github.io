@@ -48,6 +48,13 @@ a:hover {
     margin-right: 15px;
 }
 
+.city {
+    background: #000;
+    color: #fff;
+    border-radius: 3px;
+    padding: 6px 16px;
+}
+
 .social-network {
     float: right;
 }
@@ -68,14 +75,20 @@ a:hover {
 }
 
 /*____________________________________________________________________*/
+.info {
+    float: right;
+    position: relative;
+    top: 15px;
+}
+
 .info li {
     display: inline-block;
     list-style: none;
-    line-height: 130%;
+    line-height: 100%;
     padding-left: 25px;
     background: url(img/Circle.png) no-repeat left 44%;
     margin-left: 15px;
-    float: right;
+
     border-right: 1px solid #e6e6e6;
     padding-right: 30px;
 }
@@ -131,7 +144,7 @@ nav li a:hover:before {
 
 .current a {
     border-bottom: 7px solid #bd2631;
-
+    padding: 9px;
 }
 
 .nav ul li {
@@ -163,4 +176,56 @@ nav li a:hover:before {
     left: 0;
     top: 0;
     bottom: 0;
+}
+
+/*____________________________________________________________________*/
+.slider {
+    position: relative;
+}
+
+.slider-item {
+    background: url("img/slider.png") center right no-repeat;
+    height: 600px;
+    position: relative;
+}
+
+.slide-content {
+    background: rgba(0, 0, 0, 0.71);
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    color: #fff;
+    font-size: 20px;
+    padding: 0 60px;
+}
+
+.slide-content h2 {
+    color: #bd2631;
+    margin-top: 20px;
+}
+
+.slide-content h1 {
+    font-size: 40px;
+}
+
+.arrows {
+    font-size: 50px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    z-index: 99;
+    cursor: pointer;
+}
+
+.arrow-left {
+    left: 20px;
+}
+
+.arrow-right {
+    right: 20px;
 }
