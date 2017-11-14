@@ -250,16 +250,15 @@ nav li a:hover:before {
 .product-info p {
     padding: 0px 90px;
     color: white;
-}
-
-.product-info p {
     color: #bd2631;
-    font-size: 2em;padding-top: 155px;
+    font-size: 2em;
+    padding-top: 155px;
 }
 
 .product-info p + p {
     color: white;
-    font-size: 1em;padding-top: 25px;
+    font-size: 1em;
+    padding-top: 25px;
 }
 
 .battery {
@@ -267,6 +266,66 @@ nav li a:hover:before {
     margin-left: 100px
 }
 
+/*___________services___________*/
+
+.services1, .services2, .services3 {
+    float: left;
+}
+
+.services3 {
+    background: url("img/services3.png") right/cover no-repeat;
+    height: 454px;
+    width: 700px;
+}
+
+.services3 p {
+    padding: 0px 105px;
+    color: white;
+    color: #bd2631;
+    font-size: 2em;
+    padding-top: 150px;
+}
+
+.services p + p {
+    color: white;
+    font-size: 1em;
+    padding-top: 25px;
+}
+
+.services2 {
+    margin-top: 150px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+/*___________dispozal___________*/
+
+.dispozal1, .dispozal2, .dispozal3 {
+    float: left;
+}
+
+.dispozal1 {
+    background: url("img/services-logo1.png") right/cover no-repeat;
+    height: 444px;
+    width: 705px;
+}
+.dispozal1 p {
+    padding: 0px 120px;
+    color: white;
+    color: #bd2631;
+    font-size: 2em;
+    padding-top: 155px;
+}
+.dispozal1 p + p {
+    color: white;
+    font-size: 1em;
+    padding-top: 25px;
+}
+.dispozal2 {
+    padding: 150px 120px ;
+    background-color: #bd2631;
+}
+.dispozal3{height: 440px}
 /*___________RESPONSIV___________*/
 
 @media screen and (max-width: 760px) {
