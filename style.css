@@ -64,9 +64,9 @@ a:hover {
     margin-left: 19px
 }
 
-/*____________________________________________________________________*/
+/*_______________________ЛОГО________________________________*/
 .logo-block {
-    width: 1400x;
+
     padding: 25px 80px;
 }
 
@@ -74,11 +74,10 @@ a:hover {
     float: left;
 }
 
-/*____________________________________________________________________*/
+/*________________________ИНФО__________________________________*/
 .info {
     float: right;
-    position: relative;
-    top: 15px;
+    margin: 15px;
 }
 
 .info li {
@@ -88,7 +87,6 @@ a:hover {
     padding-left: 25px;
     background: url(img/Circle.png) no-repeat left 44%;
     margin-left: 15px;
-
     border-right: 1px solid #e6e6e6;
     padding-right: 30px;
 }
@@ -104,23 +102,25 @@ li:before {
     display: inline-block;
 }
 
-/*____________________________________________________________________*/
+/*________________________НАВИГАЦИЯ__________________________________*/
 .nav {
-    padding: 0px 85px;
+    padding: 0 85px;
     background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    right: 0;
+    left: 0;
+    z-index: 99;
 }
 
 .nav nav {
-    float: left
+    float: left;
 }
 
 nav li a {
     color: #ffffff;
-    padding: 24px 14px 16px;
+    padding: 20px 14px 16px;
     display: inline-block;
     position: relative;
-    bottom: 10px;
-    border-bottom: 7px solid transparent;
 }
 
 nav li a:before {
@@ -142,15 +142,17 @@ nav li a:hover:before {
     width: 100%;
 }
 
-.current a {
-    border-bottom: 7px solid #bd2631;
-    padding: 9px;
+.current a:before {
+    width: 100%;
 }
+
+/*.current a:hover {
+    border-bottom: none;border-bottom: 7px solid #bd2631;
+}*/
 
 .nav ul li {
     display: inline-block;
-    position: relative;
-    top: 15px;
+    margin-top: 15px;
 }
 
 .search {
@@ -158,24 +160,133 @@ nav li a:hover:before {
     color: #fff;
     font-size: 19px;
     cursor: pointer;
-    position: relative;
-    top: 20px;
+    line-height: 3.5;
 }
 
-/*____________________________________________________________________*/
+/*_________________________СЛАЙДЕР____________________________________*/
+.slider {
+    position: relative;
+}
+
 .slider-item {
-    background: url("" center right no-repiet);
-    height: 600px;
+    background: url("img/slider.png") right/cover no-repeat;
+    height: 900px;
     position: relative;
 }
 
 .slider-content {
-    background:;
-    position: absolute;
-    right: 0;
-    left: 0;
-    top: 0;
-    bottom: 0;
+    background: rgba(0, 0, 0, 0.71);
+    display: flex;
+    flex-flow: column wrap;
+    color: #fff;
+    font-size: 20px;
+    padding: 0 90px;
+    height: 100%;
+    justify-content: center;
 }
 
-/*____________________________________________________________________*/
+.slider-content h2 {
+    color: #bd2631;
+}
+
+.slider-content h1 {
+    font-size: 40px;
+}
+
+.arrows {
+    font-size: 50px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    z-index: 99;
+    cursor: pointer;
+}
+
+.arrow-left {
+    left: 20px;
+}
+
+.arrow-right {
+    right: 20px;
+}
+
+/*______________________________*/
+.quote-block {
+    background: firebrick;
+    padding: 32px 85px;
+}
+
+.quote {
+    float: right;
+    background: #ffffff;
+    color: rgba(6, 6, 6, 0.98);
+    border-radius: 3px;
+    padding: 14px 24px;
+    margin-top: 5px;
+}
+
+.text {
+    display: inline-block;
+    color: #eeeeee;
+    font-weight: normal;
+    font-size: 1.5em;
+}
+
+/*___________PRODUCT___________*/
+.produkts {
+    display: inline-block
+}
+
+.product-info, .mashine, .battery {
+    float: left
+}
+
+.product-info {
+    background: url("img/stock.png") right/cover no-repeat;
+    height: 454px;
+    width: 700px;
+}
+
+.product-info p {
+    padding: 0px 90px;
+    color: white;
+}
+
+.product-info p {
+    color: #bd2631;
+    font-size: 2em;padding-top: 155px;
+}
+
+.product-info p + p {
+    color: white;
+    font-size: 1em;padding-top: 25px;
+}
+
+.battery {
+    margin-top: 150px;
+    margin-left: 100px
+}
+
+/*___________RESPONSIV___________*/
+
+@media screen and (max-width: 760px) {
+    .adress-block div {
+        display: block;
+        float: none;
+    }
+
+    .social-network {
+        float: none;
+        text-align: center;
+    }
+
+    .contacts-information div {
+        display: block;
+
+    }
+
+    .info ul li {
+        margin-left: 0;
+    }
+
+}
