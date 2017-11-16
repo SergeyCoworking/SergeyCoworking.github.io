@@ -249,9 +249,12 @@ nav li a:hover:before {
     width: 100%;
     height: 100%
 }
-.battery{text-align: center;}
-.battery div {
 
+.battery {
+    text-align: center;
+}
+
+.battery div {
     padding-top: 50%;
 }
 
@@ -277,13 +280,18 @@ nav li a:hover:before {
     height: 450px;
 }
 
-
-
 .services3 {
     background: url("img/services3.png") right/cover no-repeat, #000;
     width: 50%;
 }
 
+.services2 {
+    text-align: center
+}
+
+.services2 div {
+    padding-top: 50%
+}
 
 .services3 p {
     padding: 0px 105px;
@@ -303,21 +311,26 @@ nav li a:hover:before {
 
 .dispozal1, .dispozal2, .dispozal3 {
     float: left;
-    width: 25%;
-    height: 450px;
+    height: 455px;
 }
 
 .dispozal1 {
     background: url("img/services-logo1.png") right/cover no-repeat, #000;
-    height: 450px;
     width: 50%;
 }
 
-.dispozal2 div { /*___________значок___________*/
-    width: 25%;
+.dispozal2 {
     text-align: center;
-    padding-top: 50%;
+    width: 25%;
     background-color: #bd2631;
+}
+
+.dispozal2 div { /*___________значок___________*/
+    padding-top: 50%;
+}
+
+.dispozal3 {
+    width: 25%
 }
 
 .dispozal3 div {
