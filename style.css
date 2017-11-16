@@ -233,18 +233,26 @@ nav li a:hover:before {
 }
 
 /*___________PRODUCT___________*/
-.produkts {
-    display: inline-block
-}
-
 .product-info, .mashine, .battery {
-    float: left
+    float: left;
+    width: 25%;
+    height: 450px;
 }
 
 .product-info {
-    background: url("img/stock.png") right/cover no-repeat;
+    background: url("img/stock.png") right/cover no-repeat, #000;
     height: 454px;
-    width: 700px;
+    width: 50%;
+}
+
+.mashine div {
+    width: 100%;
+    height: 100%
+}
+.battery{text-align: center;}
+.battery div {
+
+    padding-top: 50%;
 }
 
 .product-info p {
@@ -261,22 +269,21 @@ nav li a:hover:before {
     padding-top: 25px;
 }
 
-.battery {
-    margin-top: 150px;
-    margin-left: 100px
-}
-
 /*___________services___________*/
 
 .services1, .services2, .services3 {
     float: left;
+    width: 25%;
+    height: 450px;
 }
 
+
+
 .services3 {
-    background: url("img/services3.png") right/cover no-repeat;
-    height: 454px;
-    width: 700px;
+    background: url("img/services3.png") right/cover no-repeat, #000;
+    width: 50%;
 }
+
 
 .services3 p {
     padding: 0px 105px;
@@ -292,23 +299,32 @@ nav li a:hover:before {
     padding-top: 25px;
 }
 
-.services2 {
-    margin-top: 150px;
-    margin-left: 100px;
-    margin-right: 100px;
-}
-
 /*___________dispozal___________*/
 
 .dispozal1, .dispozal2, .dispozal3 {
     float: left;
+    width: 25%;
+    height: 450px;
 }
 
 .dispozal1 {
-    background: url("img/services-logo1.png") right/cover no-repeat;
-    height: 444px;
-    width: 705px;
+    background: url("img/services-logo1.png") right/cover no-repeat, #000;
+    height: 450px;
+    width: 50%;
 }
+
+.dispozal2 div { /*___________значок___________*/
+    width: 25%;
+    text-align: center;
+    padding-top: 50%;
+    background-color: #bd2631;
+}
+
+.dispozal3 div {
+    height: 100%;
+    width: 100%;
+}
+
 .dispozal1 p {
     padding: 0px 120px;
     color: white;
@@ -316,18 +332,14 @@ nav li a:hover:before {
     font-size: 2em;
     padding-top: 155px;
 }
+
 .dispozal1 p + p {
     color: white;
     font-size: 1em;
     padding-top: 25px;
 }
-.dispozal2 {
-    padding: 150px 120px ;
-    background-color: #bd2631;
-}
-.dispozal3{height: 440px}
-/*___________RESPONSIV___________*/
 
+/*___________RESPONSIV___________*/
 @media screen and (max-width: 760px) {
     .adress-block div {
         display: block;
