@@ -362,8 +362,36 @@ nav li a:hover:before {
 }
 
 /*___________RESPONSIV___________*/
+/*___________________________________________________1330_________*/
+@media screen and (max-width: 1330px) {
+    .battery, .services2, .dispozal2{min-width: 300px}
+    .product-info, .services3, .dispozal, .mashine, .services1,
+    .dispozal3 {
+        min-width: 356px
+    }
+
+    /*
+        .battery, .services1, .mashine {
+            width: 50%
+        }
+
+        .services2, .services3, .dispozal1, .dispozal2, .dispozal3 {
+            width: 50%;
+            float: none;
+        } {
+        width: 100%
+    }
+        .product-info {
+            width: 700px
+        }
+
+        .services1 {
+            width: 700px
+        }*/
+}
+
 @media screen and (max-width: 1021px) {
-    /*_______________________________________________1024__________*/
+    /*_______________________________________________1021__________*/
     .adress-block {
         float: none;
         text-align: center;
@@ -399,12 +427,11 @@ nav li a:hover:before {
     .slider-item {
         height: 400px;
     }
-    .quote-block{
+
+    .quote-block {
         float: none;
     }
 }
-
-
 
 @media screen and (max-width: 990px) {
     /*____________________________________________990__________*/
